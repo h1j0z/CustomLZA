@@ -1068,7 +1068,7 @@ export class SecurityConfigValidator {
     }
     if (duplicateNames.length > 0) {
       errors.push(
-        `Duplicate AWS Config rules name exist with the same name and must be unique when deployed to the same account and region. Config rules in file: ${configRuleNames}`,
+        `Duplicate AWS Config rules name exist with the same name and must be unique when deployed to the same account and region. Config rules in file: ${configRuleNames} duplicateName: ${duplicateNames}` ,
       );
     }
   }
